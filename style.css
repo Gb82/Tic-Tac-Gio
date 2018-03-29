@@ -1,0 +1,27 @@
+body {
+  background-color: white;
+}
+
+.container {
+  height: 600px;
+  width: 600px;
+  background-color: pink;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30%;
+
+}
+.container div {
+  height: 30%;
+  width: 30%;
+  background-color: yellow;
+  border: 1px solid black;
+  margin: auto;
+}
+.container div:hover {
+  cursor: hand;
+  cursor: pointer;
+  opacity: .6;
+  text-anchor: initial x;
+}
+
