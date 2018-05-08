@@ -1,49 +1,159 @@
 @import url('https://fonts.googleapis.com/css?family=Pacifico');
 
 body {
-  background-color: white;
-
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR7hd9aAh4PmvLP_MgAQTX-xMkOVCDqX-QQykwmKObSZZSYrM37Q");
+  position: relative;
+  font-family: 'Pacifico', cursive;
+  margin: 0;
+  user-select: none;
 }
 
 .container {
   width: 525px;
   margin: 0 auto;
+  padding-bottom: 24px;
+  text-align: center;
 }
 
-h1 { 
+h1 {
   text-align: center;
+  color: white;
   font-size: 60px;
-  margin-top: 60px;
-  font-family: 'Pacifico', cursive;
+  padding-top: 60px;
+  margin: 0 0 12px;
 }
 
-#message {
-  text-align: center;
-  font-size: 20px;
-  font-family: 'Pacifico', cursive;
+.message-container {
+  background-color: white;
+  width: 200px;
+  opacity: 0.8;
+  border-radius: 25px;
+  padding: 0 30px;
+  margin: 0 auto 12px;
 }
+
+.start-message {
+  font-size: 30px;
+  color: black;
+  text-align: center;
+  margin: 0;
+}
+
+.red-text {
+  color:red;
+}
+
 
 
 .square {
   width: 31%;
   margin: 2px;
   height: 150px;
+  border-radius: 25px;
   vertical-align: top;
-  background-color: pink;
+  background-color: #ced0cc;
   display: inline-block;
   margin-bottom: 5px;
-  border: 1px solid black;
   text-align: center;
   line-height: 150px;
   font-size: 40px;
-  font-family: 'Comfortaa', cursive;
-
-  
 }
 
 .square:hover {
-  cursor: hand;
   cursor: pointer;
-  opacity: .6;
+  opacity: .85;
 }
 
+div button {
+  appearance: none;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 20px;
+  color: black;
+  background-color: #ced0cc;
+  outline: none !important;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+@keyframes position {
+    from {transform: translateY(-300px);}
+    to {transform: : none;}
+}
+
+.reset-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,0.8);
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation-name: position;
+  animation-duration: .3s;
+}
+
+.reset-container h2 {
+  font-size: 36px;
+  color: #bebebe;
+}
+
+.reset-container h2 .winner {
+  color: red;
+}
+
+/* @media (max-width: 992px) {
+    .body {
+        background-color: blue; repeat-x;
+        color: white;
+    }
+} */
+
+/* @media (max-width: 600px) {
+    body {
+        background-color: olive;
+    }
+} */
+
+@media (max-width: 600px) {
+    body {
+      background-size: 0%;
+      background-repeat: no-repeat;
+    }
+    div {
+      max-width: 100%;
+      height: auto;
+    }
+    h1 {
+      color: black;
+    }
+}
+
+@media (max-width: 600px) {
+    .reset-container h2 .winner {
+      background-size: 0%;
+      background-repeat: no-repeat;
+}
+
+.el-donate {
+    text-align: center;
+    margin: 1rem 0 0.5rem 0;
+}
+
+.el-donate a {
+    font-size: 1em;
+    padding: 0.4rem 0.7rem;
+    border: 2px solid #1b85a6;
+    border-radius: 3px;
+    color: #01485e !important;
+    text-shadow: 1px 1px 1px #bbb;
+}
+
+.el-donate a:hover {
+    color: #00242f !important;
+    background: #008bb4;
+    text-shadow: 1px 1px 1px #aaa;
+}

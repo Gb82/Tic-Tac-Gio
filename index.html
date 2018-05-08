@@ -4,32 +4,38 @@
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </head>
   <body>
-    <h1>Tic Tac Toe</h1>
-    <div id="message">This is where you start</div>
-    <!-- <div class="container"> -->
-      <div class="container">
-
-        <div class="row row1">
-          <div class="square box1"></div>
-          <div class="square box2"></div>
-          <div class="square box3"></div>
-        </div>
-        <div class="row row2">  
-          <div class="square box4"></div>
-          <div class="square box5"></div>
-          <div class="square box6"></div>
-        </div>
-        <div class="row row3">
-          <div class="square box7"></div>
-          <div class="square box8"></div>
-          <div class="square box9"></div>
-        </div>
+    <h1>Tic Tac Gio</h1>
+    <div class="message-container">
+      <h2 class="start-message">
+        Next goes - <span id="symbol" class="red-text">X</span>
+      </h2>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="square" id='a'></div>
+        <div class="square" id='b'></div>
+        <div class="square" id='c'></div>
       </div>
-      <div>
-        <button id="New game"></button>
+      <div class="row">
+        <div class="square" id='d'></div>
+        <div class="square" id='e'></div>
+        <div class="square" id='f'></div>
       </div>
+      <div class="row">
+        <div class="square" id='g'></div>
+        <div class="square" id='h'></div>
+        <div class="square" id='i'></div>
+      </div>
+    </div>
+    <div class="el-donate"><a href="https://www.paypal.me/GiovanniBondioli">Donate</a></div>
+    <div class="reset-container" id='end-game'>
+      <h2>The winner is - <span id='winner' class="winner"></span></h2>
+      <button id="new-game" class="button">New Game</button>
+    </div>
       <script src="xo.js" charset="utf-8"></script>
   </body>
 </html>
